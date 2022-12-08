@@ -3,129 +3,132 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Форма Седона</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body class="page__body">
 <header class="main-header">
   <nav class="main-nav">
-  <a class="main-nav__link">
-  <img class="main-nav__link__logo" src="img/logotype-phone.svg" width="185" height="96" alt="Логотип Седона."></a>
+  <a class="main-nav__link"  href="index.html">
+  <img class="main-nav__logo" src="img/logotype-phone.svg" width="185" height="96" alt="Логотип Седона."></a>
   <button class="main-nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
   <div class="main-nav__wrapper">
-  <ul class="main-nav__list site-list">
-  <li class="site-list__item site-list__item-current "><a href="#">ГЛАВНАЯ</a>
-  <li class="site-list__item"><a href="#">ФОТО И ВИДЕО</a>
-  <li class="site-list__item"><a href="#"><img class="main-nav__link__logo" src="img/logotype-phone.svg" width="185" height="96" alt="Логотип Седона."></a>
-  <li class="site-list__item"><a href="#">ФОРМА ОТЗЫВА</a>
-  <li class="site-list__item"><a href="#">HTML ACADEMY</a>
+  <ul class="main-nav__list">
+  <li class="main-nav__item"><a class="main-nav__link main-nav__link--light" href="index.html">ГЛАВНАЯ</a></li>
+  <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">ФОТО И ВИДЕО</a></li>
+  <li class="main-nav__item"><a class="main-nav__link" href="form.html">ФОРМА ОТЗЫВА</a></li>
+  <li class="main-nav__item"><a class="main-nav__link" href="#">HTML ACADEMY</a></li>
   </ul>
   </div>
   </nav>
 </header>
 <main class="main-container">
-<section class="banner-presentation ">
+<section class="banner banner--advertisement ">
   <h1 class="visually-hidden">WELCOM to the GORGEOUS SEDONA</h1>
+  <img class="banner__foto" src="/img/sedona.svg" width="229" height="39" alt="Заголовок Седона.">
 </section>
 <section class="feedback">
   <h2 class="feedback__title headline">Оставьте свой отзыв</h2>
-  <p class="feedback__description benefits__description">Помогите нашим отелям стать лучше! оставьте отзыв о них,а также о посещенных вами достопримечательностях</p>
+  <p class="feedback__description description">Помогите нашим отелям стать лучше! оставьте отзыв о них,а также о посещенных вами достопримечательностях</p>
   <form class="feedback-form" action="#" method="post">
   <div class="feedback-form__name">
   <p class="feedback-form__title">Представьтесь:</p>
+  <span class="feedback-form__label">Имя*:</span>
   <label class="feedback-form__field">
-  <span class="feedback-form__field-label">Имя*:</span>
   <input class="feedback-form-field-control input" type="text" name="feedback-form-name" placeholder="Пётр">
   </label>
+  <span class="feedback-form__label">Фамилия*:</span>
   <label class="feedback-form__field">
-  <span class="feedback-form__field-label">Фамилия*:</span>
   <input class="feedback-form-field-control input" type="text" name="feedback-form-surname" placeholder="Пустота">
   </label>
+  <span class="feedback-form__label">Отчество*:</span>
   <label class="feedback-form__field">
-  <span class="feedback-form__field-label">Отчество*:</span>
   <input class="feedback-form-field-control input" type="text" name="feedback-form-address" placeholder="Викторович">
   </label>
   </div>
   <div class="feedback-form__contacts">
   <p class="feedback-form__title">Контактная информация:</p>
   <label class="feedback-form__field">
-  <span class="feedback-form__field-label">КОНТАКТНЫЙ ТЕЛЕФОН*:</span>
-  <input class="feedback-form__field-control input" type="text" name="feedback-form-phone" placeholder="Введите телефон">
+  <span class="feedback-form__label">КОНТАКТНЫЙ ТЕЛЕФОН*:</span>
+  <input class="feedback-form__input" type="text" name="feedback-form-phone" placeholder="Введите телефон">
   </label>
-  <button class="feedback-form__button" type="submit"></button>
   <label class="feedback-form__field">
-  <span class="feedback-form__field-label">ЭЛЕКТРОННАЯ ПОЧТА*:</span>
-  <input class="feedback-form__field-control input" type="text" name="feedback-form-email" placeholder="Введите e-mail">
+  <span class="feedback-form__label">ЭЛЕКТРОННАЯ ПОЧТА*:</span>
+  <input class="feedback-form__input" type="text" name="feedback-form-email" placeholder="Введите e-mail">
   </label>
-  <button class="feedback-form__button" type="submit"></button>
   </div>
   <div class="feedback-form__review">
-  <p class="feedback__review__title">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</p>
-  <label class="feedback__revie__radio">
-  <input class="feedback__review__control input" type="radio" name="review-positive"><span class="feedback__review__answer">Скорее положительное</span>
+  <p class="feedback-form__title">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</p>
+  <label class="feedback__revie--radio">
+  <input class="feedback__review--input" type="radio" name="review-positive"><span class="feedback__answer">Скорее положительное</span>
   </label>
-  <label class="feedback__revie__radio">
-  <input class="feedback__review__control input" type="radio" name="review-negative"><span class="feedback__review__answer">Скорее отрицательное</span>
+  <label class="feedback__revie--radio">
+  <input class="feedback__review--input" type="radio" name="review-negative"><span class="feedback__answer">Скорее отрицательное</span>
   </label>
-  <label class="feedback__revie__radio">
-  <input class="feedback__review__control input" type="radio" name="review-no"><span class="feedback__review__answer">Затрудняюсь ответить</span>
+  <label class="feedback__revie--radio">
+  <input class="feedback__review--input" type="radio" name="review-no"><span class="feedback__answer">Затрудняюсь ответить</span>
   </label>
   </div>
   <div class="feedback-form__place">
-  <p class="feedback__place__title">Посещенные достопримечательности:</p>
-  <label class="feedback__place__checkbox">
-  <input class="feedback__place__control input" type="checkbox" name="place"><span class="feedback__place">Мост Дьявола</span>
+  <p class="feedback-form__title">Посещенные достопримечательности:</p>
+  <label class="feedback__place--checkbox">
+  <input class="feedback__place--input" type="checkbox" name="place"><span class="feedback__place">Мост Дьявола</span>
   </label>
   <label class="feedback__place__checkbox">
-  <input class="feedback__place__control input" type="checkbox" name="place"><span class="feedback__place">Гора Колокол</span>
+  <input class="feedback__place--input" type="checkbox" name="place"><span class="feedback__place">Гора Колокол</span>
   </label>
-  <label class="feedback__place__checkbox">
-  <input class="feedback__place__control input" type="checkbox" name="place"><span class="feedback__place">Слайд-Парк</span>
+  <label class="feedback__place--checkbox">
+  <input class="feedback__place--input" type="checkbox" name="place"><span class="feedback__place">Слайд-Парк</span>
   </label>
-  <label class="feedback__place__checkbox">
-  <input class="feedback__place__control input" type="checkbox" name="place"><span class="feedback__place">Красные скалы</span>
+  <label class="feedback__place--checkbox">
+  <input class="feedback__place--input" type="checkbox" name="place"><span class="feedback__place">Красные скалы</span>
   </label>
   </div>
   <div class="feedback-form__opinion">
-  <p class="feedback__opinion__title">Опишите свои эмоции:</p>
-  <textarea class="feedback__opinion__description" name="feedback__opinion" placeholder="Опишите подробно все свои восторги">
+  <p class="feedback-form__title">Опишите свои эмоции:</p>
+  <textarea class="feedback__opinion--description" name="feedback__opinion">
   </textarea>
   </div>
-  <button class="feedback-form__button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+  <button class="feedback-form__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
   <span class="feedback-form__text">*-Обязательные поля</span>
   </form>
 </section>
 </main>
 <footer class="main-footer">
-  <div class="main-footer__wrapper">
-  <div class="main-footer__nickname nickname">
-  <p class="nickname__text"><a class="nickname__link" href="#">#VISITSEDONA</a></p>
+  <div class="footer-nav">
+  <div class="footer-nav__nickname nickname">
+  <p class="footer-nav__text"><a class="nickname__link" href="#">#VISITSEDONA</a></p>
   </div>
-  <div class="main-footer__social social">
-  <ul class="social__list">
-  <li class="social__item">
-  <a class="social__link social__link--vk" href="#"></a>
+  <div class="footer-nav__social">
+  <ul class="footer-nav__list">
+  <li class="footer-nav__item">
+  <a class="footer-nav__link footer-nav__link--vk" href="#"></a>
+  <span class="visually-hidden"> Социальная сеть в контакте</span>
   </li>
-  <li class="social__item">
-  <a class="social__link social__link--telegram" href="#"></a>
+  <li class="footer-nav__item">
+  <a class="footer-nav__link footer-nav__link--telegram" href="#"></a>
+  <span class="visually-hidden"> Социальная сеть телеграмм</span>
   </li>
-  <li class="social__item">
-  <a class="social__link social__link--youtube" href="#"></a>
+  <li class="footer-nav__item">
+  <a class="footer-nav__link footer-nav__link--youtube" href="#"></a>
+  <span class="visually-hidden"> Социальная сеть ютуб</span>
   </li>
   </ul>
   </div>
-  <div class="main-footer__copyright copyright">
-  <p class="copyright__text"><a class="copyright__link" href="#">Разработано</a></p>
+  <div class="footer-nav__copyright copyright">
+  <p class="footer-nav__text"><a class="copyright__link" href="#">Разработано</a></p>
   </div>
   </div>
-</footer>
-  <div class="popup-failure popup">
-  <h3 class="popup__title popup__title--size">ЧТО-ТО ПОШЛО НЕ ТАК!</h3>
-  <p class="popup__notification">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-  <button class="popup__button" type="button">OK</button>
+  </footer>
+  <div class="popup-failure">
+  <h3 class="popup-failure__title popup-failure__title--size headline">ЧТО-ТО ПОШЛО НЕ ТАК!</h3>
+  <p class="popup-failure__description description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+  <button class="popup-failure__button button" type="button">OK</button>
   </div>
-  <div class="popup-succes popup">
-  <h3 class="popup__title popup__title--size">Ваш отзыв отправлен!</h3>
-  <p class="popup__notification">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
-  <button class="popup__button" type="button">ЗАКРЫТЬ ОКНО</button>
+  <div class="popup-succes">
+  <h3 class="popup-succes__title popup__title--size headline">Ваш отзыв отправлен!</h3>
+  <p class="popup-succes__description description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
+  <button class="popup-succes__button popup-succes__button--size button" type="button">ЗАКРЫТЬ ОКНО</button>
   </div>
 </body>
 </html>
