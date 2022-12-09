@@ -5,15 +5,16 @@
   background-position: center bottom, center;
   background-color: #ffffff;
   background-size: cover;
-}
 
-.banner--advertisement {
-  min-height: 158px;
-  background-image: url("/img/banner3.svg"), url("/img/catalogbanner.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: center bottom, center;
-  background-color: #ffffff;
-  background-size: cover;
+
+  &--advertisement {
+    min-height: 158px;
+    background-image: url("/img/banner3.svg"), url("/img/catalogbanner.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center bottom, center;
+    background-color: #ffffff;
+    background-size: cover;
+  }
 }
 
 .banner__image {
@@ -22,4 +23,14 @@
 
 .banner__foto {
   margin: 52px 45px 67px 45px;
+}
+
+@media (min-width:768px) {
+  .banner {
+    min-height: 518px;
+  }
+
+  .banner__image {
+    margin: 77px 370px 91px;
+  }
 }
