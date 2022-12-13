@@ -2,17 +2,58 @@
   margin-top: 53px;
 }
 
+.feedback-form__info {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width:@tablet-width) {
+    width: 648px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width:@desktop-width) {
+    width: 960px;
+  }
+}
+
 .feedback-form__name {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 63px;
+
+  @media (min-width:@tablet-width) {
+    width: 280px;
+    min-height: 323px;
+  }
+
+  @media (min-width:@desktop-width) {
+    width: 430px;
+    min-height: 269px;
+  }
 }
 
 
 .feedback-form__contacts {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 59px;
+  width: 280px;
+  min-height: 174px;
+
+  @media (min-width:@tablet-width) {
+    width: 280px;
+    min-height: 174px;
+  }
+
+  @media (min-width:@desktop-width) {
+    width: 430px;
+    min-height: 269px;
+  }
 }
 
 .feedback-form__title {
@@ -34,12 +75,59 @@
   color: #333333;
 }
 
-.feedback-form__review,
+.feedback-form__review {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 49px;
+
+  @media (min-width:@tablet-width) {
+    width: 568px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width:@desktop-width) {
+    width: 960px;
+  }
+}
+
+.feedback-form__revie-radio {
+  width: 280px;
+  min-height: 46px;
+}
+
 .feedback-form__place {
   display: flex;
   flex-direction: column;
   margin-bottom: 49px;
+  width: 280px;
+
+  @media (min-width:@tablet-width) {
+    width: 480px;
+    min-height: 108px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  @media (min-width:@desktop-width) {
+    width: 960px;
+  }
 }
+
+.feedback-form__place-checkbox {
+  width: 280px;
+  min-height: 46px;
+
+  @media (min-width:@tablet-width) {
+    width: 224px;
+  }
+
+  @media (min-width:@desktop-width) {
+    width: 172px;
+  }
+}
+
 
 .feedback__answer,
 .feedback__place {
@@ -56,4 +144,26 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  cursor: pointer;
+
+  @media (min-width:@tablet-width) {
+    width: 324px;
+    margin: auto;
+  }
+}
+
+.feedback-form__opinion-description {
+  max-width: 279px;
+  width: 100%;
+  min-height: 150px;
+
+  @media (min-width:@tablet-width) {
+    max-width: 648px;
+    min-height: 160px;
+  }
+
+  @media (min-width:@desktop-width) {
+    max-width: 768px;
+    min-height: 160px;
+  }
 }

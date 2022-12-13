@@ -2,40 +2,123 @@
   padding-top: 32px;
 }
 
+.benefits__title {
+  margin-bottom: 35px;
 
-.benefits__item {
+  @media (min-width:@tablet-width) {
+    margin: auto;
+    max-width: 520px;
+  }
+
+  @media (min-width:@desktop-width) {
+    max-width: 484px;
+  }
+}
+
+.benefits__description {
+  margin-bottom: 35px;
+
+  @media (min-width:@tablet-width) {
+    max-width: 520px;
+    margin: auto;
+  }
+
+  @media (min-width:@desktop-width) {
+    max-width: 484px;
+  }
+}
+
+.benefits-profit__item {
+  width: 320px;
   min-height: 211px;
   padding: 33px 18px 61px 18px;
   background: #81b3d2;
 
-  &--gray {
-    min-height: 168px;
-    padding: 24px 24px 24px 24px;
-    background: #d6d6d6;
+  @media (min-width:@tablet-width) {
+    width: 256px;
+    min-height: 256px;
+    padding: 0;
   }
 
-  &--white {
-    background: #ffffff;
+  @media (min-width:@desktop-width) {
+    width: 400px;
   }
 }
 
-.benefits__list {
+.benefits-reason__item {
+  width: 320px;
+  min-height: 168px;
+  padding: 24px 0;
+  background: #ffffff;
+
+  @media (min-width:@tablet-width) {
+    width: 256px;
+    min-height: 256px;
+  }
+
+  @media (min-width:@desktop-width) {
+    width: 400px;
+    min-height: 330px;
+  }
+}
+
+.benefits-value__item {
+  width: 320px;
+  min-height: 168px;
+  padding: 24px 0;
+  background: #d6d6d6;
+  padding: 24px 0;
+
+  @media (min-width:@tablet-width) {
+    width: 256px;
+    min-height: 256px;
+  }
+
+  @media (min-width:@desktop-width) {
+    width: 400px;
+  }
+}
+
+.benefits-profit__list,
+.benefits-reason__list,
+.benefits-value__list {
   padding: 0;
   margin: 0;
   list-style-type: none;
   display: flex;
   flex-direction: column;
+
+  @media (min-width:@tablet-width) {
+    width: 768px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width:@desktop-width) {
+    width: 1200px;
+  }
 }
 
-.benefits__title {
-  margin-bottom: 35px;
-}
-
-.benefits__description {
-  margin-bottom: 35px;
-}
-
-
-.benefits__image {
+.benefits-profit__image {
   display: flex;
+
+  @media (min-width:@tablet-width) {
+    width: 512px;
+    min-height: 256px;
+  }
+
+  @media (min-width:@desktop-width) {
+    width: 800px;
+  }
+}
+
+.benefits-profit__number {
+  margin: 0 0 17px 0;
+  text-align: center;
+
+  &--light {
+    margin: 0 0 17px 0;
+    color: #ffffff;
+    text-align: center;
+  }
 }

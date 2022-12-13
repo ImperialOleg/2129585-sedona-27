@@ -1,19 +1,15 @@
 .main-header {
-  max-width: 320px;
+  width: 320px;
   min-height: 56px;
   margin: 0 auto;
   background-color: #ffffff;
-}
+  position: relative;
 
-@media (min-width:768px) {
-  .main-header {
-    max-width: 768px;
-    padding: 0 9px 0 49px;
+  @media (min-width:@tablet-width) {
+    width: 768px;
   }
-}
 
-@media (min-width:1200px) {
-  .main-header {
-    max-width: 1200px;
+  @media (min-width:@desktop-width) {
+    width: 1200px;
   }
 }
