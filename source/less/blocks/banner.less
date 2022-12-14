@@ -5,19 +5,33 @@
   background-position: center bottom, center;
   background-color: #ffffff;
   background-size: cover;
-}
 
-.banner--advertisement {
-  min-height: 158px;
-  background-image: url("/img/banner3.svg"), url("/img/catalogbanner.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: center bottom, center;
-  background-color: #ffffff;
-  background-size: cover;
+  @media (min-width: @tablet-width) {
+    min-height: 518px;
+    background-image: url("/img/banner3-tablet.svg"), url("/img/banner-tablet.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center bottom, center;
+    background-color: #ffffff;
+    background-size: cover;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 518px;
+    background-image: url("/img/banner3-desktop.svg"), url("/img/banner-desktop.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center bottom, center;
+    background-color: #ffffff;
+    background-size: cover;
+  }
 }
 
 .banner__image {
   margin: 90px 19px 85px;
+
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
 }
 
 .banner__foto {

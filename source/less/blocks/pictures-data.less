@@ -1,0 +1,47 @@
+.pictures-data {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width:@tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #f2f2f2;
+    justify-content: space-between;
+  }
+}
+
+.pictures-data__info-name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.pictures-data__info-author {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.pictures-data__value {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.pictures-data__value-button {
+  width: 23px;
+  height: 21px;
+  cursor: pointer;
+}
+
+.pictures-data__value-likes {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #000000;
+}

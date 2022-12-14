@@ -4,6 +4,22 @@
 
 .search__title {
   margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 435px;
+    font-size: 30px;
+    line-height: 26px;
+    margin: auto;
+  }
+}
+
+.search__description {
+  @media (min-width: @tablet-width) {
+    max-width: 425px;
+    line-height: 26px;
+    font-size: 21px;
+    margin: auto;
+  }
 }
 
 .search__button {
@@ -13,4 +29,10 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    width: 458px;
+    height: 58px;
+  }
 }
