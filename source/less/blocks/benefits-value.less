@@ -20,15 +20,37 @@
   width: 320px;
   min-height: 168px;
   padding: 24px 0;
-  background: #d6d6d6;
-  padding: 24px 0;
+  background: #eeeeee;
+  padding: 24px 26px;
 
   @media (min-width:@tablet-width) {
     width: 256px;
     min-height: 256px;
+    padding: 52px 49px;
   }
 
   @media (min-width:@desktop-width) {
     width: 400px;
+  }
+}
+
+.benefits-value__number {
+  text-align: center;
+}
+
+.benefits-value__item-gray {
+  position: relative;
+}
+
+.benefits-value__item-gray::after {
+  content: "";
+  position: absolute;
+  width: 284px;
+  height: 1px;
+  bottom: 5px;
+  background: #d6d6d6;
+
+  @media (min-width:@tablet-width) {
+    display: none;
   }
 }

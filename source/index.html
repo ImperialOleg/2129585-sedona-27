@@ -8,19 +8,17 @@
   </head>
   <body class="page__body">
   <header class="main-header">
-  <nav class="main-nav">
+  <nav class="main-nav main-nav--opened main-nav--nojs">
   <a class="main-nav__link main-nav__link--logo" href="index.html">
   <img class="main-nav__logo" src="img/logotype-phone.svg" width="185" height="96" alt="Логотип Седона.">
   </a>
   <button class="main-nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
-  <div class="main-nav__wrapper">
   <ul class="main-nav__list">
-  <li class="main-nav__item"><a class="main-nav__link main-nav__link--light" href="index.html">ГЛАВНАЯ</a></li>
+  <li class="main-nav__item "><a class="main-nav__link main-nav__link--light" href="index.html">ГЛАВНАЯ</a></li>
   <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">ФОТО И ВИДЕО</a></li>
   <li class="main-nav__item"><a class="main-nav__link" href="form.html">ФОРМА ОТЗЫВА</a></li>
   <li class="main-nav__item"><a class="main-nav__link" href="#">HTML ACADEMY</a></li>
   </ul>
-  </div>
   </nav>
 </header>
 <main class="main-container">
@@ -33,9 +31,9 @@
   <p class="benefits__description description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
   <ul class="benefits-profit__list">
   <li class="benefits-profit__item">
-  <h3 class="benefits-profit__titleheadline">НАСТОЯЩИЙ ГОРОДОК</h3>
+  <h3 class="benefits-profit__title headline">НАСТОЯЩИЙ ГОРОДОК</h3>
   <p class="benefits-profit__number benefits-profit__number--light">-№1-</p>
-  <p class="benefits-profit__description benefits-profit__description--light description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+  <p class="benefits-profit__description  description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
   </li>
   <li class="benefits-profit__item-image">
   <img class="benefits-profit__image" src="./img/fotocity.jpg" width="320" height="256" alt="Фотография отеля.">
@@ -48,7 +46,7 @@
   </li>
   <li class="benefits-reason__item">
   <h3 class="benefits-reason__title headline">ЕДА</h3>
-  <p class="benefits-reason__description description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+  <p class="benefits-reason__description description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
   </li>
   <li class="benefits-reason__item">
   <h3 class="benefits-reason__title headline">СУВЕНИРЫ</h3>
@@ -66,17 +64,17 @@
   </li>
   </ul>
   <ul class="benefits-value__list">
-  <li class="benefits-value__item benefits-value__item--gray advantages">
+  <li class="benefits-value__item benefits-value__item-gray advantages">
   <h3 class="benefits-value__title headline">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
   <p class="benefits-value__number">-№3-</p>
   <p class="benefits-value__description description">ВСЕ интересные места находятся очень близко</p>
   </li>
-  <li class="benefits-value__item benefits-value__item--gray advantages">
+  <li class="benefits-value__item benefits-value__item-gray advantages">
   <h3 class="benefits-value__title headline">КРАСИВАЯ ДОРОГА</h3>
   <p class="benefits-value__number">-№4-</p>
   <p class="benefits-value__description description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
   </li>
-  <li class="benefits-value__item benefits-value__item--gray advantages">
+  <li class="benefits-value__item  advantages">
   <h3 class="benefits-value__title headline">МАЛО ТУРИСТОВ</h3>
   <p class="benefits-value__number">-№5-</p>
   <p class="benefits-value__description description">Большинство едет в гранд каньон и толпится там</p>
@@ -90,6 +88,7 @@
   </section>
   <section class="map">
   <h3 class="visually-hidden"> Это карта</h3>
+  <iframe class="map__foto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381181.753807606!2d-114.17326457279727!3d34.14799720247679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08ebcb4c186b%3A0x423927b17fc1cd71!2z0JDRgNC40LfQvtC90LAsINCh0KjQkA!5e0!3m2!1sru!2sru!4v1671045290131!5m2!1sru!2sru" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </section>
 </main>
 <footer class="main-footer">
@@ -118,13 +117,6 @@
   </div>
   </div>
   </footer>
-  <div class="menu">
-  <ul class="menu__list">
-  <li class="menu__item"><a class="menu__link" href="#">ГЛАВНАЯ</a></li>
-  <li class="menu__item"><a class="menu__link" href="#">ФОТО И ВИДЕО</a></li>
-  <li class="menu__item"><a class="menu__link" href="#">ФОРМА ОТЗЫВА</a></li>
-  <li class="menu__item"><a class="menu__link" href="#">HTML ACADEMY</a></li>
-  </ul>
-  </div>
+  <script src="js/script.js"></script>
 </body>
 </html>

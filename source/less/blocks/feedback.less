@@ -1,23 +1,29 @@
 .feedback {
   padding: 36px 20px 24px 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 64px 60px 0 60px;
+  }
 }
 
 .feedback__title {
   margin-bottom: 35px;
 
-  @media (min-width:@tablet-width) {
+  @media (min-width: @tablet-width) {
     max-width: 377px;
     font-size: 30px;
     line-height: 26px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 .feedback__description {
-  @media (min-width:@tablet-width) {
-    max-width: 498px;
+  @media (min-width: @tablet-width) {
+    max-width: 443px;
     font-size: 14px;
     line-height: 24px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
