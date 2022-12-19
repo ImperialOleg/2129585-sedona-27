@@ -8,18 +8,16 @@
 </head>
 <body class="page__body">
 <header class="main-header">
-  <nav class="main-nav">
+  <nav class="main-nav main-nav--opened main-nav--nojs">
   <a class="main-nav__link main-nav__link--logo"  href="index.html">
   <img class="main-nav__logo" src="img/logotype-phone.svg" width="185" height="96" alt="Логотип Седона."></a>
   <button class="main-nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
-  <div class="main-nav__wrapper">
   <ul class="main-nav__list">
   <li class="main-nav__item"><a class="main-nav__link main-nav__link--light" href="index.html">ГЛАВНАЯ</a></li>
   <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">ФОТО И ВИДЕО</a></li>
   <li class="main-nav__item"><a class="main-nav__link" href="form.html">ФОРМА ОТЗЫВА</a></li>
   <li class="main-nav__item"><a class="main-nav__link" href="#">HTML ACADEMY</a></li>
   </ul>
-  </div>
   </nav>
 </header>
 <main class="main-container">
@@ -33,33 +31,33 @@
   <form class="feedback-form" action="#" method="post">
   <div class="feedback-form__info">
     <div class="feedback-form__name">
-  <h3 class="feedback-form__title">Представьтесь:</h3>
+  <h3 class="feedback-form__name__title headline">Представьтесь:</h3>
   <span class="feedback-form__label">Имя*:</span>
   <label class="feedback-form__field">
-  <input class="feedback-form-field-control input" type="text" name="feedback-form-name" placeholder="Пётр">
+  <input class="feedback-form__input input" type="text" name="feedback-form-name" placeholder="Пётр">
   </label>
   <span class="feedback-form__label">Фамилия*:</span>
   <label class="feedback-form__field">
-  <input class="feedback-form-field-control input" type="text" name="feedback-form-surname" placeholder="Пустота">
+  <input class="feedback-form__input input" type="text" name="feedback-form-surname" placeholder="Пустота">
   </label>
   <span class="feedback-form__label">Отчество*:</span>
   <label class="feedback-form__field">
-  <input class="feedback-form-field-control input" type="text" name="feedback-form-address" placeholder="Викторович">
+  <input class="feedback-form__input input" type="text" name="feedback-form-address" placeholder="Викторович">
   </label>
   </div>
   <div class="feedback-form__contacts">
-  <h3 class="feedback-form__title">Контактная информация:</h3>
+  <h3 class="feedback-form__contacts__title headline">Контактная информация:</h3>
   <label class="feedback-form__field">
   <span class="feedback-form__label">КОНТАКТНЫЙ ТЕЛЕФОН*:</span>
-  <input class="feedback-form__input" type="text" name="feedback-form-phone" placeholder="Введите телефон">
+  <input class="feedback-form__phone input" type="text" name="feedback-form-phone" placeholder="Введите телефон">
   </label>
   <label class="feedback-form__field">
-  <span class="feedback-form__label">ЭЛЕКТРОННАЯ ПОЧТА*:</span>
-  <input class="feedback-form__input" type="text" name="feedback-form-email" placeholder="Введите e-mail">
+    <span class="feedback-form__label">ЭЛЕКТРОННАЯ ПОЧТА*:</span>
+    <input class="feedback-form__mail input" type="text" name="feedback-form-email" placeholder="Введите e-mail">
   </label>
   </div>
   </div>
-  <h3 class="feedback-form__title">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</h3>
+  <h3 class="feedback-form__title headline">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</h3>
   <div class="feedback-form__review">
   <label class="feedback-form__revie-radio">
   <input class="feedback-form__review-input" type="radio" name="review-positive"><span class="feedback__answer">Скорее положительное</span>
@@ -71,7 +69,7 @@
   <input class="feedback-form__review-input" type="radio" name="review-no"><span class="feedback__answer">Затрудняюсь ответить</span>
   </label>
   </div>
-  <h3 class="feedback-form__title">Посещенные достопримечательности:</h3>
+  <h3 class="feedback-form__title headline">Посещенные достопримечательности:</h3>
   <div class="feedback-form__place">
   <label class="feedback-form__place-checkbox">
   <input class="feedback-form__place-input" type="checkbox" name="place"><span class="feedback__place">Мост Дьявола</span>
@@ -86,7 +84,7 @@
   <input class="feedback-form__place-input" type="checkbox" name="place"><span class="feedback__place">Красные скалы</span>
   </label>
   </div>
-  <h3 class="feedback-form__title">Опишите свои эмоции:</h3>
+  <h3 class="feedback-form__title headline">Опишите свои эмоции:</h3>
   <div class="feedback-form__opinion">
   <textarea class="feedback-form__opinion-description" name="feedback__opinion" placeholder="Опишите подробно все  свои восторги"></textarea>
   </div>
@@ -131,5 +129,6 @@
   <p class="popup-succes__description description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
   <button class="popup-succes__button popup-succes__button--size button" type="button">ЗАКРЫТЬ ОКНО</button>
   </div>
+  <script src="js/script.js"></script>
 </body>
 </html>

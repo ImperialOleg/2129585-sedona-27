@@ -1,5 +1,9 @@
 .search {
-  padding: 17px 18px 0 18px;
+  padding: 17px 18px 49px 18px;
+
+  @media (min-width: @tablet-width) {
+    padding: 61px 166px 58px 166px;
+  }
 }
 
 .search__title {
@@ -9,7 +13,8 @@
     max-width: 435px;
     font-size: 30px;
     line-height: 26px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -31,8 +36,11 @@
   line-height: 26px;
   cursor: pointer;
 
+
   @media (min-width: @tablet-width) {
     width: 458px;
     height: 58px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }

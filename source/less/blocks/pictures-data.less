@@ -1,28 +1,68 @@
 .pictures-data {
   display: flex;
   flex-direction: column;
+  position: relative;
 
-  @media (min-width:@tablet-width) {
+  @media (min-width: @tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
     background: #f2f2f2;
     justify-content: space-between;
+    padding: 0 27px 0 20px;
+    min-height: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #000000;
+    opacity: 0.3;
   }
 }
 
+.pictures-data::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  background: #e5e5e5;
+  bottom: -5px;
+  right: -6%;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.pictures-data__info {
+  padding-top: 15px;
+}
+
 .pictures-data__info-name {
+  margin: 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
 }
 
+
 .pictures-data__info-author {
+  margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: #000000;
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .pictures-data__value {
@@ -30,12 +70,17 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+  gap: 14px;
 }
 
 .pictures-data__value-button {
   width: 23px;
   height: 21px;
   cursor: pointer;
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .pictures-data__value-likes {
@@ -44,4 +89,8 @@
   line-height: 21px;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
 }
