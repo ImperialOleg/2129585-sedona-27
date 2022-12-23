@@ -5,6 +5,10 @@
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicons/favicon32.ico">
+  <link rel="icon" href="img/favicons/favicon32.svg" type="img/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="img/favicons/manifest.webmanifest">
   </head>
   <body class="page__body">
   <header class="main-header">
@@ -36,7 +40,11 @@
   <p class="benefits-profit__description  description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
   </li>
   <li class="benefits-profit__item-image">
-  <img class="benefits-profit__image" src="./img/fotocity.jpg" width="320" height="256" alt="Фотография отеля.">
+  <picture>
+  <source media="(min-width:1200px)" srcset="/img/fotocity-desktop@1x.jpg 1x, ./img/fotocity-desktop@2x.jpg 2x">
+  <source media="(min-width:768px)" srcset="/img/fotocity-tablet@1x.jpg 1x, ./img/fotocity-tablet@2x.jpg 2x">
+  <img class="benefits-profit__image" src="./img/fotocity.jpg"  width="320" height="256" srcset="./img/fotocity-mobile@2x.jpg 2x" alt="Фотография отеля.">
+  </picture>
   </li>
   </ul>
   <ul class="benefits-reason__list">
