@@ -6,22 +6,39 @@
   background-color: #ffffff;
   background-size: cover;
 
+
   @media (min-width: @tablet-width) {
     min-height: 518px;
     background-image: url("/img/banner3-tablet.svg"), url("/img/banner-tablet.jpg");
     background-repeat: no-repeat, no-repeat;
     background-position: center bottom, center;
     background-color: #ffffff;
-    background-size: cover;
+    background-size: contain;
   }
 
   @media (min-width: @desktop-width) {
     min-height: 518px;
-    background-image: url("/img/banner3-desktop.svg"), url("/img/banner-desktop.jpg");
+    background-image: url("/img/banner4-desktop.svg"), url("/img/banner-desktop.jpg");
     background-repeat: no-repeat, no-repeat;
     background-position: center bottom, center;
     background-color: #ffffff;
-    background-size: cover;
+    background-size: contain;
+  }
+
+  @media(min-resolution: 2dppx) {
+    background-image: url("/img/banner3-mobile@2x.svg"), url("/img/banner-mobile@2x.jpg");
+    background-size: 640px auto;
+    background-position: center bottom, center;
+  }
+
+  @media(min-resolution: 2dppx) and (min-width: @tablet-width) {
+    background-image: url("/img/banner3-tablet@2x.svg"), url("/img/banner-tablet@2x.jpg");
+    background-size: 1536px auto;
+  }
+
+  @media(min-resolution: 2dppx) and (min-width: @desktop-width) {
+    background-image: url("/img/banner3-desktop@2x.svg"), url("/img/banner-desktop@2x.jpg");
+    background-size: 2400px auto;
   }
 }
 
