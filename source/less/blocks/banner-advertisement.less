@@ -1,23 +1,40 @@
 .banner-advertisement {
   min-height: 158px;
-  background-image: url("./img/banner3.svg"), url("/img/catalogbanner.jpg");
+  background-image: url("/img/banner3.svg"), url("/img/catalogbanner.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: center bottom, center;
+  background-position: center bottom;
   background-color: #ffffff;
   background-size: cover;
+  padding-top: 52px;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
-    min-height: 518px;
+    min-height: 290px;
     background-image: url("/img/banner3-tablet.svg"), url("/img/catalogbanner-tablet.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-position: center bottom, center;
-    background-size: contain;
+    background-position: center bottom;
+    background-size: contain, cover;
+    padding-top: 95px;
   }
 
   @media (min-width: @desktop-width) {
+    min-height: 301px;
     background-image: url("/img/banner4-desktop.svg"), url("/img/catalogbanner-desktop.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-position: center bottom, center;
-    background-size: contain;
+    background-position: center bottom;
+    background-size: contain, cover;
+    padding-top: 101px;
+  }
+}
+
+.banner-advertisement__foto {
+  @media (min-width: @tablet-width) {
+    width: 457px;
+    height: 78px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 459px;
+    height: 80px;
   }
 }
