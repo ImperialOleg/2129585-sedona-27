@@ -8,7 +8,7 @@
   <link rel="icon" href="img/favicons/favicon32.ico">
   <link rel="icon" href="img/favicons/favicon32.svg" type="img/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
-  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="manifest" href="img/favicons/manifest.webmanifest">
 </head>
 <body class="page__body">
 <header class="main-header">
@@ -105,21 +105,38 @@
   <div class="footer-nav__social">
   <ul class="footer-nav__list">
   <li class="footer-nav__item">
-  <a class="footer-nav__link footer-nav__link--vk" href="#"></a>
+  <button class="footer-nav__button" type="button" aria-label="В контакте">
+  <svg role="img" aria-hidden="true" focusable="false" width="24" height="24">
+  <use xlink:href="/img/sprite.svg#vk"></use>
+  </svg>
+  </button>
   <span class="visually-hidden"> Социальная сеть в контакте</span>
   </li>
   <li class="footer-nav__item">
-  <a class="footer-nav__link footer-nav__link--telegram" href="#"></a>
+  <button class="footer-nav__button" type="button" aria-label="Телеграмм">
+  <svg role="img" aria-hidden="true" focusable="false" width="22" height="18">
+  <use xlink:href="/img/sprite.svg#telegramm"></use>
+  </svg>
+  </button>
   <span class="visually-hidden"> Социальная сеть телеграмм</span>
   </li>
   <li class="footer-nav__item">
-  <a class="footer-nav__link footer-nav__link--youtube" href="#"></a>
+  <button class="footer-nav__button" type="button" aria-label="Ютуб">
+  <svg role="img" aria-hidden="true" focusable="false" width="20" height="14">
+  <use xlink:href="/img/sprite.svg#youtube"></use>
+  </svg>
+  </button>
   <span class="visually-hidden"> Социальная сеть ютуб</span>
   </li>
   </ul>
   </div>
   <div class="footer-nav__copyright copyright">
   <p class="footer-nav__text"><a class="copyright__link" href="#">Разработано</a></p>
+  <a class="copyright__link" href="#" aria-label="Сайт htmlacademy">
+  <svg class="footer-nav__htmlacademy" width="27" height="35" role="img" aria-hidden="true" focusable="false">
+  <use xlink:href="/img/sprite.svg#htmlacademy"></use>
+  </svg>
+  </a>
   </div>
   </div>
   </footer>
