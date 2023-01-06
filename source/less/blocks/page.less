@@ -2,7 +2,13 @@
   font-family: "PT Sans", "Arial", sans-serif;
   margin: 0;
 
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    margin: 0 auto;
+  }
+
   @media (min-width: @desktop-width) {
+    width: 1200px;
     box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
   }
 }
