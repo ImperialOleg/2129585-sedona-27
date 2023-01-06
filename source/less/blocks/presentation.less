@@ -56,11 +56,17 @@
 
 .presentation__video::before {
   content: "";
-  width: 48px;
-  height: 54px;
   position: absolute;
-  background: rgba(255, 255, 255, 0.7);
   left: 50%;
-  top: 50%;
+  top: 35%;
   transform: translate(-50%);
+  border-top: 25px solid transparent;
+  border-left: 50px solid rgba(255, 255, 255, 0.7);
+  border-bottom: 25px solid transparent;
+
+  @media (min-width: @tablet-width) {
+    border-top: 50px solid transparent;
+    border-left: 100px solid rgba(255, 255, 255, 0.7);
+    border-bottom: 50px solid transparent;
+  }
 }
