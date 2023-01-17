@@ -13,3 +13,5 @@ navButton.addEventListener('click', function () {
     navMain.classList.remove('main-nav--opened');
   }
 });
+
+

@@ -18,12 +18,12 @@ import { deleteAsync as del } from 'del';
 
 export const styles = () => {
   return gulp.src('source/less/style.less', { sourcemaps: true })
-    .pipe(plumber())
+    // .pipe(plumber())
     .pipe(less())
-    .pipe(postcss([
-      autoprefixer(),
-      csso()
-    ]))
+    // .pipe(postcss([
+    //   autoprefixer(),
+    //   csso()
+    // ]))
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
@@ -114,8 +114,9 @@ const reload = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch('source/less/**/*.less', gulp.series(styles));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/less/**/*.less', gulp.series(styles, reload));
+  gulp.watch('source/js/*.js', gulp.series(script, reload));
+  gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
 export const build = gulp.series(

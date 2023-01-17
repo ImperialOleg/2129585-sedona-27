@@ -25,23 +25,57 @@
   @media (min-width: @tablet-width) {
     width: 256px;
     min-height: 256px;
-    padding: 52px 49px;
+    padding: 54px 49px;
   }
 
   @media (min-width: @desktop-width) {
     width: 400px;
+    padding: 61px 49px;
+  }
+}
+
+.benefits-value__title {
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 107px;
+    margin: 0 auto;
+  }
+}
+
+.benefits-value__title-road {
+  @media (min-width: @tablet-width) {
+    margin-top: -10px;
   }
 }
 
 .benefits-value__number {
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 13px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 15px;
+    margin-bottom: 24px;
+  }
 }
 
-.benefits-value__item-gray {
+.benefits-value__description {
+  @media (min-width: @tablet-width) {
+    margin-bottom: -20px;
+  }
+}
+
+.benefits-value__item--gray {
   position: relative;
 }
 
-.benefits-value__item-gray::after {
+.benefits-value__item--gray::after {
   content: "";
   position: absolute;
   width: 284px;

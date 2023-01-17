@@ -17,7 +17,7 @@
 
 .headline {
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
@@ -38,7 +38,7 @@
 .input {
   width: 280px;
   height: 58px;
-  padding: 16px 0 16px 16px;
+  padding: 20px 0 16px 16px;
   margin-bottom: 16px;
   background: #f2f2f2;
   border: none;
@@ -59,12 +59,17 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 430px;
+    width: 402px;
+  }
+
+  &--personality {
+    @media (min-width: @desktop-width) {
+      width: 430px;
+    }
   }
 }
 
 img {
-  max-width: 100%;
   height: auto;
 }
 
