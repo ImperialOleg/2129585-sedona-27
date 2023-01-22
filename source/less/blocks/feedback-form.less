@@ -63,7 +63,7 @@
   }
 }
 
-.feedback-form__name__title {
+.feedback-form__name-title {
   margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
@@ -95,7 +95,7 @@
   }
 }
 
-.feedback-form__contacts__title {
+.feedback-form__contacts-title {
   margin-bottom: 18px;
 
   @media (min-width: @tablet-width) {
@@ -259,15 +259,28 @@
   }
 }
 
-.feedback-form__round {
+.feedback-form__review-round {
   position: relative;
   width: 46px;
   height: 46px;
   background: #f2f2f2;
   border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background: #e5e5e5;
+  }
+
+  &:focus {
+    background: #e5e5e5;
+  }
+
+  &:active {
+    background: #d5d5d5;
+  }
 }
 
-.feedback-form__review-input[type="radio"]:checked+.feedback-form__round::before {
+.feedback-form__review-input[type="radio"]:checked+.feedback-form__review-round::before {
   position: absolute;
   width: 16px;
   height: 16px;
@@ -279,11 +292,15 @@
   left: 50%;
 }
 
-.feedback-form__review-input[type="radio"]:focus+.feedback-form__round::before {
+.feedback-form__review-input[type="radio"]:focus+.feedback-form__review-round::before {
   outline: 2px solid #000000;
 }
 
-.feedback-form__revie-radio {
+.feedback-form__review-round:active {
+  opacity: 0.3;
+}
+
+.feedback-form__review-radio {
   width: 280px;
   min-height: 46px;
   display: flex;
@@ -301,7 +318,7 @@
   }
 }
 
-.feedback-form__revie-radio:nth-child(2) {
+.feedback-form__review-radio:nth-child(2) {
   @media (min-width: @tablet-width) {
     margin-left: 5px;
   }
@@ -359,13 +376,13 @@
     height: 1px;
     background: #dbdbdb;
     top: -55px;
-    left: -18%;
+    right: -18%;
   }
 
   @media (min-width: @desktop-width) {
     width: 280px;
-    top: -30px;
-    right: 4%;
+    top: -44px;
+    right: 0%;
   }
 }
 
@@ -399,16 +416,30 @@
 }
 
 
-.feedback-form__square {
+.feedback-form__place-square {
   position: relative;
   width: 46px;
   height: 46px;
   background: #f2f2f2;
   border-radius: 4px;
   display: block;
+  cursor: pointer;
+
+  &:hover {
+    background: #e5e5e5;
+  }
+
+  &:focus {
+    background: #e5e5e5;
+  }
+
+  &:active {
+    background: #d5d5d5;
+  }
 }
 
-.feedback-form__place-input[type="checkbox"]:checked+.feedback-form__square::before {
+
+.feedback-form__place-input[type="checkbox"]:checked+.feedback-form__place-square::before {
   position: absolute;
   width: 22px;
   height: 16px;
@@ -418,6 +449,10 @@
   border-radius: 50%;
   top: 50%;
   left: 50%;
+}
+
+.feedback-form__place-square:active {
+  opacity: 0.3;
 }
 
 .feedback-form__opinion {

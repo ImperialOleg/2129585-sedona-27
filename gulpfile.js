@@ -18,12 +18,12 @@ import { deleteAsync as del } from 'del';
 
 export const styles = () => {
   return gulp.src('source/less/style.less', { sourcemaps: true })
-    // .pipe(plumber())
+    .pipe(plumber())
     .pipe(less())
-    // .pipe(postcss([
-    //   autoprefixer(),
-    //   csso()
-    // ]))
+    .pipe(postcss([
+      autoprefixer(),
+      csso()
+    ]))
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
