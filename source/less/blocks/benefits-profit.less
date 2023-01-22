@@ -2,12 +2,25 @@
   text-align: center;
   color: #ffffff;
   margin-bottom: 11px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    margin-bottom: 14px;
+    max-width: 150px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+  }
 }
 
 .benefits-profit__description {
   color: #ffffff;
-}
 
+  @media (min-width: @desktop-width) {
+    max-width: 285px;
+  }
+}
 
 .benefits-profit__list {
   padding: 0;
@@ -15,11 +28,13 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
+  margin-top: -5px;
 
   @media (min-width: @tablet-width) {
     width: 768px;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -27,8 +42,20 @@
   }
 }
 
+.benefits-profit__list-bridge {
+  @media (min-width: @tablet-width) {
+    flex-direction: row-reverse;
+    margin-top: -9px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: -7px;
+  }
+}
+
 .benefits-profit__image {
   display: flex;
+  min-height: 260px;
 
   @media (min-width: @tablet-width) {
     width: 512px;
@@ -48,23 +75,44 @@
     margin: 0 0 17px 0;
     color: #ffffff;
     text-align: center;
+
+    @media (min-width: @tablet-width) {
+      margin: 15px 0 22px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 12px 0 25px;
   }
 }
 
+
 .benefits-profit__item {
   width: 320px;
-  min-height: 211px;
-  padding: 33px 18px 40px 18px;
+  min-height: 181px;
+  padding: 30px 18px 38px 18px;
   background: #81b3d2;
 
   @media (min-width: @tablet-width) {
     width: 256px;
     min-height: 256px;
-    padding: 52px 33px 31px 33px;
+    padding: 52px 32px 31px 32px;
   }
 
   @media (min-width: @desktop-width) {
     width: 400px;
     padding: 52px 54px;
+  }
+}
+
+.benefits-profit__item-bridge {
+  padding: 37px 18px 38px 18px;
+
+  @media (min-width: @tablet-width) {
+    padding: 51px 33px 33px 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 54px 83px;
   }
 }

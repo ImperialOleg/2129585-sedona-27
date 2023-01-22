@@ -10,6 +10,10 @@
   <link rel="icon" href="img/favicons/favicon32.svg" type="img/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="img/favicons/manifest.webmanifest">
+  <link rel="preload" href="fonts/ptsansbold.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -18,7 +22,9 @@
       <a class="main-nav__link main-nav__link--logo" href="index.html">
         <img class="main-nav__logo" src="img/logotype-phone.svg" width="185" height="96" alt="Логотип Седона.">
       </a>
-      <button class="main-nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-nav__button" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
       <ul class="main-nav__list">
         <li class="main-nav__item "><a class="main-nav__link main-nav__link--light" href="index.html">ГЛАВНАЯ</a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">ФОТО И ВИДЕО</a></li>
@@ -36,6 +42,10 @@
     <section class="benefits benefits-profit benefits-reason benefits-value">
       <h2 class="benefits__title headline">СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
       <p class="benefits__description description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <svg class="benefits__image" width="320" height="57" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M-191.17 23.7-441 0v57h600.55L-191.17 0v23.7Zm701.44 0V0L159.55 57H760V0L510.27 23.7Z"
+          fill="#81b3d2" />
+      </svg>
       <ul class="benefits-profit__list">
         <li class="benefits-profit__item">
           <h3 class="benefits-profit__title headline">НАСТОЯЩИЙ ГОРОДОК</h3>
@@ -51,10 +61,10 @@
               srcset="/img/fotocity-tablet@1x.webp 1x, /img/fotocity-tablet@2x.webp 2x">
             <source type="image/webp" srcset="/img/fotocity-mobile@1x.webp 1x, /img/fotocity-mobile@2x.webp 2x">
             <source media="(min-width:1200px)"
-              srcset="/img/fotocity-desktop@1x.jpg 1x, ./img/fotocity-desktop@2x.jpg 2x">
-            <source media="(min-width:768px)" srcset="/img/fotocity-tablet@1x.jpg 1x, ./img/fotocity-tablet@2x.jpg 2x">
-            <img class="benefits-profit__image" src="./img/fotocity.jpg" width="320" height="256"
-              srcset="./img/fotocity-mobile@2x.jpg 2x" alt="Фотография отеля.">
+              srcset="/img/fotocity-desktop@1x.jpg 1x, /img/fotocity-desktop@2x.jpg 2x">
+            <source media="(min-width:768px)" srcset="/img/fotocity-tablet@1x.jpg 1x, /img/fotocity-tablet@2x.jpg 2x">
+            <img class="benefits-profit__image" src="/img/fotocity.jpg" width="320" height="256"
+              srcset="/img/fotocity-mobile@2x.jpg 2x" alt="Фотография отеля.">
           </picture>
         </li>
       </ul>
@@ -76,34 +86,40 @@
           <p class="benefits-reason__description description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!
           </p>
         </li>
-        <li class="benefits-reason__item">
+        <li class="benefits-reason__item benefits-reason__item-gift">
           <svg class="benefits-reason__icon-gift" width="32" height="38" role="img" aria-label="Здесь сувениры"
             focusable="false">
             <use xlink:href="img/sprite.svg#icon-gift"></use>
           </svg>
           <h3 class="benefits-reason__title headline">СУВЕНИРЫ</h3>
-          <p class="benefits-reason__description description">Не только китайского, но и местного производства!</p>
+          <p class="benefits-reason__description benefits-reason__description-gift description">Не только китайского, но
+            и местного производства!</p>
         </li>
       </ul>
-      <ul class="benefits-profit__list">
-        <li class="benefits-profit__item-image">
-          <img class="benefits-profit__image" src="./img/fotobridge.jpg" width="320" height="256"
-            alt="Фотография моста.">
-        </li>
-        <li class="benefits-profit__item">
+      <ul class="benefits-profit__list benefits-profit__list-bridge">
+        <li class="benefits-profit__item benefits-profit__item-bridge">
           <h3 class="benefits-profit__title benefits-profit__title--light headline">ТАМ ЕСТЬ Мост дьявола</h3>
           <p class="benefits-profit__number benefits-profit__number--light">-№2-</p>
           <p class="benefits-profit__description  description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </li>
+        <li class="benefits-profit__item-image">
+          <picture>
+            <source media="(min-width:1200px)"
+              srcset="/img/fotobridge-desktop@1x.jpg, /img/fotobridge-desktop@2x.jpg 2x">
+            <source media="(min-width:768px)" srcset="/img/fotobridge-tablet@1x.jpg, /img/fotobridge-tablet@2x.jpg 2x">
+            <img class="benefits-profit__image" src="/img/fotobridge-mobile@1x.jpg" width="320" height="260"
+              srcset="/img/fotobridge-mobile@2x.jpg 2x" alt="Фотография моста.">
+          </picture>
+        </li>
       </ul>
       <ul class="benefits-value__list">
-        <li class="benefits-value__item benefits-value__item-gray advantages">
+        <li class="benefits-value__item benefits-value__item--gray advantages">
           <h3 class="benefits-value__title headline">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
           <p class="benefits-value__number">-№3-</p>
           <p class="benefits-value__description description">ВСЕ интересные места находятся очень близко</p>
         </li>
-        <li class="benefits-value__item benefits-value__item-gray advantages">
-          <h3 class="benefits-value__title headline">КРАСИВАЯ ДОРОГА</h3>
+        <li class="benefits-value__item benefits-value__item--gray advantages">
+          <h3 class="benefits-value__title benefits-value__title-road headline">КРАСИВАЯ ДОРОГА</h3>
           <p class="benefits-value__number">-№4-</p>
           <p class="benefits-value__description description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
         </li>
@@ -137,7 +153,7 @@
         <ul class="footer-nav__list">
           <li class="footer-nav__item">
             <a class="footer-nav__link" href="#" aria-label="В контакте">
-              <svg role="img" focusable="false" width="24" height="24">
+              <svg class="footer-nav__vk" role="img" focusable="false" width="24" height="24">
                 <use xlink:href="/img/sprite.svg#icon-vk"></use>
               </svg>
             </a>
@@ -145,7 +161,7 @@
           </li>
           <li class="footer-nav__item">
             <a class="footer-nav__link" href="#" aria-label="Телеграмм">
-              <svg role="img" focusable="false" width="22" height="18">
+              <svg class="footer-nav__telegram" role="img" focusable="false" width="22" height="18">
                 <use xlink:href="/img/sprite.svg#icon-telegram"></use>
               </svg>
             </a>
@@ -153,7 +169,7 @@
           </li>
           <li class="footer-nav__item">
             <a class="footer-nav__link" href="#" aria-label="Ютуб">
-              <svg role="img" focusable="false" width="20" height="14">
+              <svg class="footer-nav__youtube" role="img" focusable="false" width="20" height="14">
                 <use xlink:href="/img/sprite.svg#icon-youtube"></use>
               </svg>
             </a>

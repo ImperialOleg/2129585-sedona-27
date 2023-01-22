@@ -1,13 +1,14 @@
 .search {
-  padding: 17px 18px 49px 18px;
+  padding: 37px 18px 49px 18px;
 
   @media (min-width: @tablet-width) {
-    padding: 61px 166px 58px 166px;
+    padding: 61px 155px 58px;
   }
 }
 
 .search__title {
-  margin-bottom: 25px;
+  margin-bottom: 22px;
+  font-size: 21px;
 
   @media (min-width: @tablet-width) {
     max-width: 435px;
@@ -15,6 +16,7 @@
     line-height: 26px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 28px;
   }
 }
 
@@ -22,8 +24,14 @@
   @media (min-width: @tablet-width) {
     max-width: 425px;
     line-height: 26px;
-    font-size: 21px;
-    margin: auto;
+    font-size: 14px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 355px;
+    font-size: 12px;
+    margin: 0 auto;
   }
 }
 
@@ -32,15 +40,21 @@
   width: 284px;
   height: 58px;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   cursor: pointer;
 
 
   @media (min-width: @tablet-width) {
+    margin-top: 34px;
     width: 458px;
     height: 58px;
+    font-size: 19px;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 37px;
   }
 }

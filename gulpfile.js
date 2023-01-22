@@ -114,8 +114,9 @@ const reload = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch('source/less/**/*.less', gulp.series(styles));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/less/**/*.less', gulp.series(styles, reload));
+  gulp.watch('source/js/*.js', gulp.series(script, reload));
+  gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
 export const build = gulp.series(

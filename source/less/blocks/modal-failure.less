@@ -1,0 +1,48 @@
+.modal-failure {
+  padding: 45px 42px 35px 42px;
+  width: 320px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  position: relative;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+
+  @media (min-width: @tablet-width) {
+    width: 400px;
+    height: 347px;
+  }
+}
+
+.modal-failure__title {
+  margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
+}
+
+.modal-failure__description {
+  max-width: 237px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 307px;
+  }
+}
+
+.modal-failure__button {
+  width: 180px;
+  height: 58px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 272px;
+  }
+}
