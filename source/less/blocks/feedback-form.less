@@ -59,7 +59,7 @@
     height: 338px;
     width: 1px;
     background: #dbdbdb;
-    right: -10%;
+    right: -15%;
   }
 }
 
@@ -168,7 +168,7 @@
 .feedback-form__phone {
   background-image: url("/img/phone.svg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: 102%;
   padding-right: 62px;
 
   @media (min-width: @tablet-width) {
@@ -184,7 +184,7 @@
 .feedback-form__mail {
   background-image: url("/img/mail.svg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: 102%;
   padding-right: 62px;
 
   @media (min-width: @tablet-width) {
@@ -403,6 +403,13 @@
 .feedback-form__place-checkbox:nth-child(2) {
   @media (min-width: @tablet-width) {
     margin-left: 16px;
+  }
+}
+
+.feedback-form__place-checkbox:nth-child(3) {
+  @media (min-width: @desktop-width) {
+    margin-left: 16px;
+    margin-right: -22px;
   }
 }
 
