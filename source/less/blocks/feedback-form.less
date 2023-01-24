@@ -59,7 +59,7 @@
     height: 338px;
     width: 1px;
     background: #dbdbdb;
-    right: -10%;
+    right: -15%;
   }
 }
 
@@ -168,7 +168,7 @@
 .feedback-form__phone {
   background-image: url("/img/phone.svg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: 102%;
   padding-right: 62px;
 
   @media (min-width: @tablet-width) {
@@ -184,7 +184,7 @@
 .feedback-form__mail {
   background-image: url("/img/mail.svg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: 102%;
   padding-right: 62px;
 
   @media (min-width: @tablet-width) {
@@ -281,7 +281,7 @@
   }
 }
 
-.feedback-form__review-input[type="radio"]:checked + .feedback-form__review-round::before {
+.feedback-form__review-input[type="radio"]:checked+.feedback-form__review-round::before {
   position: absolute;
   width: 16px;
   height: 16px;
@@ -293,7 +293,7 @@
   left: 50%;
 }
 
-.feedback-form__review-input[type="radio"]:focus + .feedback-form__review-round::before {
+.feedback-form__review-input[type="radio"]:focus+.feedback-form__review-round::before {
   outline: 2px solid #000000;
 }
 
@@ -406,6 +406,13 @@
   }
 }
 
+.feedback-form__place-checkbox:nth-child(3) {
+  @media (min-width: @desktop-width) {
+    margin-left: 16px;
+    margin-right: -22px;
+  }
+}
+
 .feedback-form__place-checkbox:nth-child(4) {
   @media (min-width: @tablet-width) {
     margin-left: 16px;
@@ -437,7 +444,7 @@
 }
 
 
-.feedback-form__place-input[type="checkbox"]:checked + .feedback-form__place-square::before {
+.feedback-form__place-input[type="checkbox"]:checked+.feedback-form__place-square::before {
   position: absolute;
   width: 22px;
   height: 16px;
