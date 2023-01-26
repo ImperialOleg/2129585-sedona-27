@@ -1,3 +1,19 @@
+.map {
+  background-image: url("/img/map-mobile.jpg");
+  background-repeat: no-repeat;
+  background-color: #eeeeee;
+  background-position: center;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("/img/map-tablet.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("/img/map-desktop.jpg");
+  }
+}
+
+
 .map__foto {
   border: none;
   display: block;

@@ -94,26 +94,20 @@
   @media (min-width: @tablet-width) {
     width: 768px;
     background: #ffffff;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     align-items: center;
-    justify-content: space-around;
     height: 100%;
     z-index: unset;
     margin: 0 auto;
 
-    :nth-child(2) {
-      margin-right: 148px;
-
-      @media (min-width: @desktop-width) {
-        margin-right: 235px;
-      }
+    & > :nth-child(3) {
+      grid-column-start: 4;
     }
-  }
 
-  @media (min-width: @desktop-width) {
-    width: 100%;
+    @media (min-width: @desktop-width) {
+      width: 100%;
+    }
   }
 }
 
@@ -152,6 +146,10 @@
     align-items: center;
     justify-content: center;
     box-shadow: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 240px;
   }
 }
 
